@@ -1,23 +1,22 @@
 import "./Sidebar.css";
+import SidebarItem from './SidebarItem/SidebarItem'
+import ContentMain from '../Content/ContentMain'
+import ContentProfile from "../Content/ContentProfile";
 
-export default function Sidebar() {
+type SidebarProps = {
+  title: string
+}
+
+export default function Sidebar({ title }: SidebarProps) {
   return (
     <div className="sidebar">
-      <h2 className="sidebar-title">メニュー</h2>
+      <h2 className="sidebar-title">{title}</h2>
       <ul className="sidebar-list">
-        <li>
-          <a href="#">ホーム</a>
-        </li>
-        <li>
-          <a href="#">設定</a>
-        </li>
-        <li>
-          <a href="#">プロフィール</a>
-        </li>
-        <li>
-          <a href="#">ログアウト</a>
-        </li>
+        <SidebarItem title="ホーム" component={ContentMain} />
+        <SidebarItem title="プロフィール" component={ContentProfile} />
       </ul>
     </div>
-  );
+  )
 }
+
+export type { SidebarProps }
