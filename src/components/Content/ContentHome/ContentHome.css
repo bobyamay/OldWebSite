@@ -1,0 +1,21 @@
+.content-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: bounce 3s ease-in-out infinite alternate;
+  width: 300px;
+  font-size: 20px;
+  color: #ff4500;
+  text-shadow: 2px 2px 0 #666;
+}
+
+/* 往復アニメーション */
+@keyframes bounce {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

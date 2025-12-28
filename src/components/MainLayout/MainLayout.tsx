@@ -14,8 +14,10 @@ export default function MainLayout() {
   return (
     <MainContentContext.Provider value={{ setContent }}>
       <div className="main-container">
-        <Sidebar title="menu" />
-        {content}
+        <Sidebar title="メニュー" />
+        <div className="main-content">
+          {content}
+        </div>
       </div>
     </MainContentContext.Provider>
   )

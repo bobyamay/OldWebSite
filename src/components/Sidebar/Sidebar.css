@@ -1,0 +1,12 @@
+
+.sidebar {
+  flex: 0 0 15%;
+  overflow-y: auto;
+  min-height: 0; 
+}
+
+.sidebar-title{
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}

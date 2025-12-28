@@ -1,12 +1,13 @@
 import React from "react";
+import { useContext } from "react";
+import { MainContentContext } from "../../MainLayout/MainLayout";
+import "./SidebarItem.css";
 
 type SidebarItemProps = {
   title: string;
   component: React.ComponentType<any>;
   componentProps?: Record<string, any>;
 };
-import { useContext } from "react";
-import { MainContentContext } from "../../MainLayout/MainLayout";
 
 export default function SidebarItem({
   title,
@@ -24,12 +25,7 @@ export default function SidebarItem({
           e.preventDefault();
           const Comp = component;
           setContent?.(
-            <main className="main-content">
-              <button onClick={() => setContent?.(null)} style={{ marginBottom: 12 }}>
-                Back
-              </button>
               <Comp {...(componentProps ?? {})} />
-            </main>
           );
           return;
         }}
