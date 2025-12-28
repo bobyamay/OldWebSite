@@ -1,0 +1,7 @@
+<!-- ファイル名例: dot-tile-10.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" preserveAspectRatio="none">
+  <!-- 背景の薄い緑 -->
+  <rect width="20" height="20" fill="#e8f7ea"/>
+  <!-- 中心のドット（中央座標 10,10） -->
+  <circle cx="10" cy="10" r="1" fill="#67b26f"/>
+</svg>
