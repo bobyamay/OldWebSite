@@ -6,13 +6,13 @@ on:
   push:
     branches:
       - main
-      - master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Use Node.js
         uses: actions/setup-node@v4
@@ -23,11 +23,12 @@ jobs:
         run: npm ci
 
       - name: Build (set base to repository name)
-        run: npm run build -- --base /${{ github.event.repository.name }}/
+        run: npm run build 
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist   # CRAなら build
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: gh-pages
+        uses: actions/deploy-pages@v4
