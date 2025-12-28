@@ -29,6 +29,5 @@ pnpm-debug.log*
 .log
 
 # lockfiles (if you prefer one manager keep that file)
-package-lock.json
 pnpm-lock.yaml
 yarn.lock
