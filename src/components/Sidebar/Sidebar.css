@@ -1,8 +1,6 @@
-
 .sidebar {
-  flex: 0 0 15%;
   overflow-y: auto;
-  min-height: 0; 
+  min-height: 0;
 }
 
 .sidebar-title{

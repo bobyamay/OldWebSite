@@ -4,42 +4,48 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
-  margin: 0; /* ブラウザデフォルトの余白を消す */
+  margin: 0;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "ヒラギノ丸ゴ ProN",
+    "Hiragino Maru Gothic ProN", "Meiryo UI", "Yu Gothic",
+    "Yu Gothic UI", "Arial", sans-serif;
 }
 
 .main-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr;
   height: 100vh;
+  gap: 0;
+  min-height: 0;
 }
 
-/* メイン領域 */
-.main-content{
-    flex: 1 1 auto;
-    padding: 20px;
-    overflow-y: auto;  /* 独立スクロール */
-    min-height: 0;     /* flex子要素で overflow を効かせるため */
+.main-content {
+  padding: 20px;
+  overflow-y: auto;
+  min-height: 0;
 }
 
-.main-content h1.main-content-title{
+.main-content h1.main-content-title {
   font-size: 50px;
   color: #ff8c00;
-  text-shadow:
-    4px 4px 0 #666;
+  text-shadow: 4px 4px 0 #666;
 }
 
-.main-content *{
+.main-content * {
   text-align: center;
 }
 
-body{
-  background-image: url('/src/image/background.svg');
+body {
+  background-image: url("/src/image/background.svg");
   background-repeat: repeat;
   background-size: 20px 20px;
 }
 
-ul{
-    list-style: none;
-    padding-left: 0px;
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
