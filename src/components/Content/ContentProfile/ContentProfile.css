@@ -1,0 +1,24 @@
+
+.content-profile-body{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.main-content-profile .content-left img{
+    width:70%;
+    padding:2.5%;
+}
+
+.main-content-profile .content-right{
+    background-color: #e8f7ea;
+}
+
+
+.main-content-profile .content-right *{
+    text-align: left;
+}
+
+.main-content-profile .content-right p{
+    text-indent: 1rem;
+    font-size: 1.2rem;
+}
