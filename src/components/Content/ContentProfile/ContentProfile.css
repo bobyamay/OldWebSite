@@ -22,3 +22,8 @@
     text-indent: 1rem;
     font-size: 1.2rem;
 }
+
+.main-content-profile .content-right .profile-title{
+    padding-left: 12px;
+    border-left: 3px solid #111;
+}
