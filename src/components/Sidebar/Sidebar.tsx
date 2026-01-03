@@ -2,6 +2,7 @@ import "./Sidebar.css";
 import SidebarItem from './SidebarItem/SidebarItem'
 import ContentMain from '../Content/ContentHome/ContentHome'
 import ContentProfile from "../Content/ContentProfile/ContentProfile";
+import ContentBrog from "../Content/ContentBrog/ContentBrog";
 
 type SidebarProps = {
   title: string
@@ -15,46 +16,7 @@ export default function Sidebar({ title }: SidebarProps) {
       <ul className="sidebar-list">
         <SidebarItem title="ホーム" component={ContentMain} />
         <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
-        <SidebarItem title="ホーム" component={ContentMain} />
-        <SidebarItem title="プロフィール" component={ContentProfile} />
+        <SidebarItem title="ブログ" component={ContentBrog} />
       </ul>
     </div>
   )

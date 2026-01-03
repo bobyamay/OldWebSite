@@ -49,3 +49,9 @@ ul {
   list-style: none;
   padding-left: 0px;
 }
+
+.error-msg{
+  color: red;
+  background-color: yellow;
+  font-size:25px;
+}
